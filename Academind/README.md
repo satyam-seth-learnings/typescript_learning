@@ -1,10 +1,10 @@
-### (Video Link)[https://youtu.be/BwuLxPH8IDs]
+### [Video Link](https://youtu.be/BwuLxPH8IDs)
 
-### (Academind Channel Link)[https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w]
+### [Academind Channel Link](https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w)
 
 #### Timestamps
 
-- Getting Started (00:00)[https://www.youtube.com/watch?v=BwuLxPH8IDs&t=0s]
+- Getting Started [00:00](https://www.youtube.com/watch?v=BwuLxPH8IDs&t=0s)
 - What is TypeScript: 01:57
 - Installing & Using TypeScript 06:31
 - The Advantages of TypeScript 19:53
