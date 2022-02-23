@@ -45,3 +45,5 @@
 - Code Quality Options 03:06:39
 - Debugging with Visual Studio Code 03:11:02
 - Wrap Up 03:15:22
+
+#### [Full Course Link (udemy)](https://www.udemy.com/course/understanding-typescript/?couponCode=D_0222)
