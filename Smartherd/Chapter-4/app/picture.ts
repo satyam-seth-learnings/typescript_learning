@@ -3,11 +3,11 @@
  */
 class Picture {
   // member are public by default
-  artTitle: string;
+  static artTitle: string;
   owner: string;
 
   orderPicture(quantity: number): void {
-    console.log(`Order ${quantity} copies of ${this.artTitle}`);
+    console.log(`Order ${quantity} copies of ${Picture.artTitle}`);
   }
 }
 
@@ -33,3 +33,4 @@ class Photograph extends Picture implements Artist {
 }
 
 let newPic: Photograph = new Photograph();
+Picture.artTitle;
