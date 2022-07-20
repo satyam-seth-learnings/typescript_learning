@@ -1,21 +1,14 @@
 // Function executes when Start Game button is clicked
 function startGame() {
-  let playerName: string = "Annanya";
-  let age = 6;
+  let playerName = "Annanya";
+  let welcomeMessage = welcomePlayer(playerName);
 
   var messageElement = document.getElementById("message");
-  messageElement!.innerText = "Welcome! Starting a new game..";
+  messageElement!.innerText = welcomeMessage;
 }
 
 document.getElementById("startGame")!.addEventListener("click", startGame);
 
-var myString = "Hello World";
-console.log(myString);
-
-// Using let to declare a variable
-let myString2 = "Hello World";
-console.log(myString2);
-
-// Using const to declare a variable
-const myString3 = "Hello World";
-console.log(myString3);
+function welcomePlayer(name: string) {
+  return `Hello ${name}! Let's start a new game...`;
+}
