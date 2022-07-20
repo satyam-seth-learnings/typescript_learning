@@ -1,6 +1,7 @@
 // Function executes when Start Game button is clicked
 function startGame() {
-  let playerName = "Annanya";
+  let playerName: string = "Annanya";
+
   let welcomeMessage = welcomePlayer(playerName);
 
   var messageElement = document.getElementById("message");
