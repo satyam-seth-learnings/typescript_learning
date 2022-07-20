@@ -1,5 +1,8 @@
 // Function executes when Start Game button is clicked
 function startGame() {
+  let playerName: string = "Annanya";
+  let age = 6;
+
   var messageElement = document.getElementById("message");
   messageElement!.innerText = "Welcome! Starting a new game..";
 }
