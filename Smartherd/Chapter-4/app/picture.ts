@@ -4,7 +4,8 @@
 class Picture {
   public artTitle: string; // member are public by default
   protected owner: string; // accessed inside the class or any classes that inherit from the class
-  private _price: number; // can't be accesses outside the class
+  private _price: number; // soft private, can't be accesses outside the class
+  #newPrice: number; // hard private property
 
   /**
    * Getter method: with 'get' keyword with name of the property takes no parameter
@@ -26,3 +27,11 @@ class Picture {
     console.log(`Order ${quantity} copies of ${this.artTitle}`);
   }
 }
+
+let newPicture: Picture = new Picture();
+newPicture._price = 1000;
+newPicture["_price"] = 1000;
+
+newPicture.newPrice = 1000;
+newPicture.#newPrice = 1000;
+newPicture["#newPrice"] = 1000;
