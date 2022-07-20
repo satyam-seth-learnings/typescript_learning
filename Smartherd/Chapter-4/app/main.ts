@@ -1,28 +1,13 @@
+/// <reference path="helper.ts" />
+
 // Function executes when Start Game button is clicked
 function startGame() {
-  let playerName: string | undefined = getInputVal("playerName");
+  let playerName: string = Helper.getInputVal("playerName");
   displayScore(10, playerName);
   displayScore(-10, playerName);
 }
 
 document.getElementById("startGame")!.addEventListener("click", startGame);
-
-/**
- * Fetch input data
- * @param elementID
- * @return input element
- */
-function getInputVal(elementID: string): string | undefined {
-  const inputElement: HTMLInputElement = <HTMLInputElement>(
-    document.getElementById(elementID)
-  );
-
-  if (inputElement.value === "") {
-    return undefined;
-  } else {
-    return inputElement.value;
-  }
-}
 
 /**
  * Display score of the player
