@@ -45,3 +45,5 @@ Name of the game is Quick Math App. This takes the player's name as input. On cl
 6. Type Declaration Files & DefinitelyTyped Repo
 
 [Playlist Link](https://youtube.com/playlist?list=PLlxmoA0rQ-Lwo0Xr_qUzsPGsiG_rz2fdP)
+
+[Reference Repo](https://github.com/smartherd/TypeScript-Fudamentals)
