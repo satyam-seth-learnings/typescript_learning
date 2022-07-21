@@ -1,7 +1,8 @@
 {
     "extends": "../tsconfig.base",
     "compilerOptions": {
-        "removeComments": true
+        "removeComments": true,
+        "outFile": "../js/bundle.js"
     },
     "files": [
         "./main.ts",

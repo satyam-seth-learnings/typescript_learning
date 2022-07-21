@@ -4,5 +4,5 @@
 interface Result {
   playerName: string;
   score: number;
-  numberOfProblem: number;
+  numberOfProblems: number;
 }

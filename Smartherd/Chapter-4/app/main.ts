@@ -1,35 +1,20 @@
-/// <reference path="helper.ts" />
+/// <reference path="players.ts" />
+/// <reference path="game.ts" />
+let newGame: Game;
 
-// Function executes when Start Game button is clicked
-function startGame() {
-  let playerName: string = Helper.getInputVal("playerName");
-  displayScore(10, playerName);
-  displayScore(-10, playerName);
-}
+// add click handler to the show number button
+document.getElementById("showNumbers")!.addEventListener("click", () => {
+  console.log("showing numbers");
 
-document.getElementById("startGame")!.addEventListener("click", startGame);
+  const player: Player = new Player();
+  player.name = Helper.getUserInput("playerName") || "Math Player";
 
-/**
- * Display score of the player
- * @param score
- * @param playerName
- * @return void
- */
-function displayScore(score: number, playerName: string = "Math Player"): void {
-  let logger: (value: string) => void;
+  newGame = new Game(player);
+  newGame.displayNumbers();
+});
 
-  if (score < 0) {
-    logger = logError;
-  } else {
-    logger = logMessage;
-  }
-
-  logger(`Score -> ${score}`);
-
-  const scoreElement: HTMLElement | null =
-    document.getElementById("playerScore");
-  scoreElement!.innerText = `${playerName}, your score -> ${score}`;
-}
-
-let logMessage = (message: string) => console.log(message);
-let logError = (message: string) => console.error(message);
+// add click handler to the start game button
+document.getElementById("startGame")!.addEventListener("click", () => {
+  console.log("game started");
+  newGame.displayGame();
+});
