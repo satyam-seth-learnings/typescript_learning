@@ -1,7 +1,7 @@
 import { Result } from "./result";
 
 export class Scoreboard {
-  private result: Result;
+  private result!: Result;
 
   // results of the player
   createResult(newResult: Result): void {
