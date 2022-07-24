@@ -1,0 +1,1 @@
+(()=>{"use strict";new class{constructor(){console.log("post data")}},new class{constructor(){console.log("calling category constructor")}},console.log("Leela!")})();
